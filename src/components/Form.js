@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "reactstrap";
 
 const Form = props => {
 	console.log("props", props);
@@ -21,36 +22,40 @@ const Form = props => {
 	};
 
 	return (
-		<form onSubmit={submitForm}>
-			{/* <label htmlFor="name">Name</label> */}
-			<input
-				id="name"
-				type="text"
-				name="name"
-				placeholder="Member Name"
-				onChange={handleChanges}
-				value={member.name}
-			/>
-			{/* <label htmlFor="email">Email</label> */}
-			<input
-				id="email"
-                name="email"
-                type="text"
-				placeholder="Member Email"
-				onChange={handleChanges}
-				value={member.email}
-            />
-            {/* <label htmlFor="role">Role</label> */}
-            <input
-                id="role"
-                type="text"
-                name="role"
-                placeholder="Member Role"
-                onChange={handleChanges}
-                value={member.role}
-            />
-			<button type="submit">Add Note</button>
-		</form>
+		<div>
+			<form onSubmit={submitForm}>
+				{/* <label htmlFor="name">Name</label> */}
+				<input
+					id="name"
+					type="text"
+					name="name"
+					placeholder="Member Name"
+					onChange={handleChanges}
+					value={member.name}
+				/>
+				{/* <label htmlFor="email">Email</label> */}
+				<input
+					id="email"
+					name="email"
+					type="text"
+					placeholder="Member Email"
+					onChange={handleChanges}
+					value={member.email}
+				/>
+				{/* <label htmlFor="role">Role</label> */}
+				<input
+					id="role"
+					type="text"
+					name="role"
+					placeholder="Member Role"
+					onChange={handleChanges}
+					value={member.role}
+				/>
+				<Button type="submit" color="primary">
+					Add Member
+				</Button>
+			</form>
+		</div>
 	);
 };
 export default Form;

@@ -2,6 +2,11 @@ import React, {useState} from 'react';
 import Form from "./components/Form";
 import Members from "./components/Members"
 import './App.css';
+import styled from "styled-components";
+
+const PageTitle = styled.h1`
+  margin: 2%;
+`; 
 
 function App() {
   
@@ -27,7 +32,7 @@ function App() {
 
   return (
 		<div className="App">
-			<h1>Team Members</h1>
+			<PageTitle className= "text-primary">Team Members</PageTitle>
 			<Members members={members} />
 			<Form addMember={addMember} />
 		</div>
