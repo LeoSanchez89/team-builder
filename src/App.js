@@ -6,6 +6,8 @@ import styled from "styled-components";
 
 const PageTitle = styled.h1`
   margin: 2%;
+  font-size: 3.5rem;
+
 `; 
 
 function App() {
@@ -32,7 +34,7 @@ function App() {
 
   return (
 		<div className="App">
-			<PageTitle className= "text-primary">Team Members</PageTitle>
+			<PageTitle className= "text-primary">Team Members <hr className="style1"/></PageTitle>
 			<Members members={members} />
 			<Form addMember={addMember} />
 		</div>

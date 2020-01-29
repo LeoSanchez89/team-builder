@@ -15,6 +15,10 @@ const Members = props => {
         flex-wrap: wrap;
     `;
 
+    const BodyText = styled.p`
+        font-weight:bold;
+    `;
+
 	return (
 		<CardGrid>
 			{props.members.map(member => (
@@ -25,8 +29,12 @@ const Members = props => {
 						</CardHeader>
 						<CardBody>
 							<CardText>
-								<p>Contact: {member.email}</p>
-								<p>Role: {member.role}</p>
+								<BodyText>
+									<em>Contact</em> <br /> {member.email} <hr />
+								</BodyText>
+								<BodyText>
+									<em>Role</em> <br />  {member.role}
+								</BodyText>
 							</CardText>
 						</CardBody>
 					</Card>

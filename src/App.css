@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+em{
+  font-size: 1rem;
+  font-style:normal;
+  color:rgb(168, 220, 255)
+ }
+
+ h2{
+   color:rgb(168, 220, 255)
+ }
+
+ hr.style1{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+ }
